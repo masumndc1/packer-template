@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "lxd",
+      "name": "lxd-archlinux",
+      "image": "archlinux:current:amd64:default",
+      "output_image": "archlinux",
+      "publish_properties": {
+        "description": "Archlinux image"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": "../shell/archlinux.sh"
+    }
+  ]
+}
