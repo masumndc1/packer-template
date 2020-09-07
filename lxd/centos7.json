@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "lxd",
+      "name": "lxd-centos7",
+      "image": "centos:7:amd64:default",
+      "output_image": "centos7",
+      "publish_properties": {
+        "description": "CentOS 7 image"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": "../shell/centos.sh"
+    }
+  ]
+}
