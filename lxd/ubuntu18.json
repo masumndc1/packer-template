@@ -2,11 +2,11 @@
   "builders": [
     {
       "type": "lxd",
-      "name": "lxd-xenial",
-      "image": "ubuntu:xenial",
-      "output_image": "ubuntu-xenial",
+      "name": "lxd-bionic",
+      "image": "ubuntu:bionic",
+      "output_image": "ubuntu-bionic",
       "publish_properties": {
-        "description": "ubuntu 16.04 image"
+        "description": "ubuntu 18.04 image"
       }
     }
   ],
