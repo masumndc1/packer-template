@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "lxd",
+      "name": "lxd-xenial",
+      "image": "ubuntu:xenial",
+      "output_image": "ubuntu-xenial",
+      "publish_properties": {
+        "description": "khabir-image"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": "./bash.sh"
+    }
+  ]
+}
