@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "lxd",
+      "name": "lxd-centos8",
+      "image": "centos:8-Stream:amd64:default",
+      "output_image": "centos8",
+      "publish_properties": {
+        "description": "CentOS8 image"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": "../shell/centos.sh"
+    }
+  ]
+}
