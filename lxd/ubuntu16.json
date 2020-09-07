@@ -6,14 +6,14 @@
       "image": "ubuntu:xenial",
       "output_image": "ubuntu-xenial",
       "publish_properties": {
-        "description": "khabir-image"
+        "description": "ubuntu 16.04 image"
       }
     }
   ],
   "provisioners": [
     {
       "type": "shell",
-      "scripts": "./bash.sh"
+      "scripts": "./shell/ubuntu.sh"
     }
   ]
 }
