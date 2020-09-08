@@ -3,8 +3,8 @@
     {
       "type": "lxd",
       "name": "lxd-archlinux",
-      "image": "archlinux",
-      "output_image": "archlinux-ready",
+      "image": "archlinux-base",
+      "output_image": "archlinux",
       "publish_properties": {
         "description": "Archlinux image"
       }

@@ -3,8 +3,8 @@
     {
       "type": "lxd",
       "name": "lxd-centos8",
-      "image": "centos8",
-      "output_image": "centos8-ready",
+      "image": "centos8-base",
+      "output_image": "centos8",
       "publish_properties": {
         "description": "CentOS8 image"
       }
