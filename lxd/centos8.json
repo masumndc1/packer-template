@@ -3,7 +3,7 @@
     {
       "type": "lxd",
       "name": "lxd-centos8",
-      "image": "centos:8-Stream:amd64:default",
+      "image": "d6f1ddce4258",
       "output_image": "centos8",
       "publish_properties": {
         "description": "CentOS8 image"
