@@ -3,7 +3,7 @@
     {
       "type": "lxd",
       "name": "lxd-archlinux",
-      "image": "archlinux:current:amd64:default",
+      "image": "5308133149fd",
       "output_image": "archlinux",
       "publish_properties": {
         "description": "Archlinux image"
