@@ -8,6 +8,3 @@
   tasks:
   - name: Downloading lxd images.
     include: play/download_image.yml
-
-  - name: Building lxd images.
-    include: play/build_image.yml
