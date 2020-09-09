@@ -1,0 +1,10 @@
+---
+# this script will install lxd container
+- hosts: localhost
+  become: yes
+  gather_facts: yes
+  ignore_errors: true
+  
+  tasks:
+  - name: Create a started test-centos7 container
+    include: play/containers.yml
