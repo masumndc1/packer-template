@@ -6,7 +6,7 @@
       "image": "centos8-base",
       "output_image": "centos8",
       "publish_properties": {
-        "description": "CentOS8 image"
+        "description": "CentOS 8 image"
       }
     }
   ],
