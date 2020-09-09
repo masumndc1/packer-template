@@ -3,8 +3,8 @@
     {
       "type": "lxd",
       "name": "lxd-focal",
-      "image": "ubuntu:focal",
-      "output_image": "ubuntu-focal",
+      "image": "ubuntu-focal",
+      "output_image": "ubuntu20",
       "publish_properties": {
         "description": "ubuntu 20.04 image"
       }

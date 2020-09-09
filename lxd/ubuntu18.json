@@ -3,8 +3,8 @@
     {
       "type": "lxd",
       "name": "lxd-bionic",
-      "image": "ubuntu:bionic",
-      "output_image": "ubuntu-bionic",
+      "image": "ubuntu-bionic",
+      "output_image": "ubuntu18",
       "publish_properties": {
         "description": "ubuntu 18.04 image"
       }
