@@ -1,30 +1,42 @@
 ---
 - name: Build ubuntu16.04 image by packer
   command: 'packer build ubuntu16.json'
-  chdir: lxd
+  args:
+    chdir: ./lxd
   become: yes
+  tags: ubuntu16
 
 - name: Build ubuntu18.04 image by packer
   command: 'packer build ubuntu18.json'
-  chdir: ./lxd
+  args:
+    chdir: ./lxd
   become: yes
+  tags: ubuntu18
 
 - name: Build ubuntu20.04 image by packer
   command: 'packer build ubuntu20.json'
-  chdir: ./lxd
+  args:
+    chdir: ./lxd
   become: yes
+  tags: ubuntu20
 
 - name: Build CentOS7 image by packer
   command: 'packer build centos7.json'
-  chdir: ./lxd
+  args:
+    chdir: ./lxd
   become: yes
+  tags: centos7
 
 - name: Build CentOS8 image by packer
   command: 'packer build centos8.json'
-  chdir: ./lxd
+  args:
+    chdir: ./lxd
   become: yes
+  tags: centos8
 
 - name: Build Archlinux image by packer
   command: 'packer build archlinux.json'
-  chdir: ./lxd
+  args:
+    chdir: ./lxd
   become: yes
+  tags: archlinux
