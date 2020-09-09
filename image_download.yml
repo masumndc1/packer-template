@@ -1,0 +1,10 @@
+---
+# this playbook will download images from upstream and 
+# copy to local repository
+- hosts: localhost
+  become: yes
+  ignore_errors: yes
+
+  tasks:
+  - name: Downloading lxd images
+    include_playbook: play/download_image.yml
