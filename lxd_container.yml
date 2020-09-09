@@ -1,0 +1,21 @@
+---
+# this script will install lxd container
+- hosts: localhost
+  become: yes
+  gather_facts: yes
+  ignore_errors: true
+  
+  tasks:
+  - name: Create a started test-centos7 container
+    lxd_container:
+      name: test-centos7
+      state: started
+      source:
+        type: local
+        mode: pull
+        # server: https://images.linuxcontainers.org
+        protocol: lxd
+        alias: centos7
+      profiles: ["default"]
+      wait_for_ipv4_addresses: true
+      timeout: 600
