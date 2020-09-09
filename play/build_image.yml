@@ -1,0 +1,30 @@
+---
+- name: Build ubuntu16.04 image by packer
+  command: 'packer build ubuntu16.json'
+  chdir: lxd
+  become: yes
+
+- name: Build ubuntu18.04 image by packer
+  command: 'packer build ubuntu18.json'
+  chdir: ./lxd
+  become: yes
+
+- name: Build ubuntu20.04 image by packer
+  command: 'packer build ubuntu20.json'
+  chdir: ./lxd
+  become: yes
+
+- name: Build CentOS7 image by packer
+  command: 'packer build centos7.json'
+  chdir: ./lxd
+  become: yes
+
+- name: Build CentOS8 image by packer
+  command: 'packer build centos8.json'
+  chdir: ./lxd
+  become: yes
+
+- name: Build Archlinux image by packer
+  command: 'packer build archlinux.json'
+  chdir: ./lxd
+  become: yes
