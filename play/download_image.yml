@@ -1,25 +1,25 @@
 ---
 - name: Download Ubuntu xenial lxd image
-  command: lxc image copy images:9dcbcd968453 local: --alias ubuntu-xenial
+  command: 'lxc image copy images:9dcbcd968453 local: --alias ubuntu-xenial'
   become: yes
 
 - name: Download Ubuntu bionic lxd image
-  command: lxc image copy images:208453f095e0 local: --alias ubuntu-bionic
+  command: 'lxc image copy images:208453f095e0 local: --alias ubuntu-bionic'
   become: yes
 
 - name: Download Ubuntu focal lxd image
-  command: lxc image copy images:c8d5f27751e6 local: --alias ubuntu-focal
+  command: 'lxc image copy images:c8d5f27751e6 local: --alias ubuntu-focal'
   become: yes
 
 - name: Download CentOS 7 lxd image
-  command: lxc image copy images:f603184f60a0 local: --alias centos7-base
+  command: 'lxc image copy images:f603184f60a0 local: --alias centos7-base'
   become: yes
 
 - name: Download CentOS 8 lxd image
-  command: lxc image copy images:d6f1ddce4258 local: --alias centos8-base
+  command: 'lxc image copy images:d6f1ddce4258 local: --alias centos8-base'
   become: yes
 
 - name: Download Archlinux lxd image
-  command: lxc image copy images:5308133149fd local: --alias archlinux-base
+  command: 'lxc image copy images:5308133149fd local: --alias archlinux-base'
   become: yes
 

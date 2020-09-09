@@ -7,4 +7,4 @@
 
   tasks:
   - name: Downloading lxd images
-    include_playbook: play/download_image.yml
+    include: play/download_image.yml
