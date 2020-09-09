@@ -9,16 +9,24 @@ We assume the target node has git and packer already installed.
 4. `sudo lxc image list images: centos | grep -i centos/7` for centos7 image.
 5. Similarly find fingerprint for ubuntu/centos/archlinux/others lxd image.
 6. Download that centos7 image to local image directory
-`sudo lxc image copy images:f603184f60a0 local: --alias centos7-base`
+```
+sudo lxc image copy images:f603184f60a0 local: --alias centos7-base
+```
 7. Do same for centos8 
-`sudo lxc image copy images:d6f1ddce4258 local: --alias centos8-base`
+```
+sudo lxc image copy images:d6f1ddce4258 local: --alias centos8-base
+```
 8. And same for others like archlinux
-`sudo lxc image copy images:5308133149fd local: --alias archlinux-base`
+```
+sudo lxc image copy images:5308133149fd local: --alias archlinux-base
+```
 9. And same for ubuntu16/18/20 
-`sudo lxc image copy images:9dcbcd968453 local: --alias ubuntu-xenial`
-`sudo lxc image copy images:208453f095e0 local: --alias ubuntu-bionic`
-`sudo lxc image copy images:c8d5f27751e6 local: --alias ubuntu-focal`
-10. Now you can run template to build lxd image
+```
+sudo lxc image copy images:9dcbcd968453 local: --alias ubuntu-xenial
+sudo lxc image copy images:208453f095e0 local: --alias ubuntu-bionic
+sudo lxc image copy images:c8d5f27751e6 local: --alias ubuntu-focal
+```
+10. Now you can run template to build lxd image.
 11. Ubuntu `sudo packer build ubuntu16/18/20.json`
 12. CentOS7 `sudo packer build centos7.json`
 13. CentOS8 `sudo packer build centos8.json`
