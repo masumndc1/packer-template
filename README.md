@@ -32,3 +32,5 @@ sudo lxc image copy images:c8d5f27751e6 local: --alias ubuntu-focal
 13. CentOS8 `sudo packer build centos8.json`
 14. Archlinux`sudo packer build archlinux.json`
 
+## more from
+https://github.com/upperstream/packer-templates
