@@ -33,5 +33,21 @@ sudo lxc image copy images:c8d5f27751e6 local: --alias ubuntu-focal
 13. CentOS8 `sudo packer build centos8.json`
 14. Archlinux`sudo packer build archlinux.json`
 
+# Creating VM for esxi. 
+# Running packer is vital on from where we are running this command.
+1. For centos7. 
+vm/centos/centos-7(master✗) pwd   
+`/Users/mac/Documents/github/packer-template/vm/centos/centos-7`
+vm/centos/centos-7(master✗) ls   
+`centos-7-x86_64-ansible.json`
+vm/centos/centos-7(master✗) `packer build -only=esxi-iso centos-7-x86-64-ansible.json`
+
+2. For Freebsd12.
+packer-template/vm/freebsd(master✗) pwd  
+`/Users/mac/Documents/github/packer-template/vm/freebsd`
+packer-template/vm/freebsd(master✗) ls  
+`build_all.bat  build_all.sh  freebsd-12.0-release-ansible.json  install.sh`
+packer-template/vm/freebsd(master✗) `packer build -only=esxi-iso freebsd-12.0-release-ansible.json`
+
 ## more from
 https://github.com/upperstream/packer-templates
