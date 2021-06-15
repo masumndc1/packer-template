@@ -29,3 +29,11 @@
   - name: Create a started test-archlinux container
     include: play/test-archlinux.yml
     tags: test-archlinux
+
+  - name: Create a started test-opensuse15 container
+    include: play/test-opensuse15.yml
+    tags: test-opensuse15
+
+  - name: Create a started test-rockylinux8 container
+    include: play/test-rockylinux8.yml
+    tags: test-rockylinux8
