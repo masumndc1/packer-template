@@ -25,3 +25,7 @@
   - name: Create a started test-ubuntu20 container
     include: play/test-ubuntu20.yml
     tags: test-ubuntu20
+
+  - name: Create a started test-archlinux container
+    include: play/test-archlinux.yml
+    tags: test-archlinux
