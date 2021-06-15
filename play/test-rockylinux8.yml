@@ -1,0 +1,15 @@
+---
+- name: Create a started test-rockylinux8 container
+  lxd_container:
+    name: test-rockylinux8
+    state: started
+    source:
+      type: image
+      mode: pull
+      url: https://localhost:8443
+      protocol: lxd
+      alias: rocklinux8
+    profiles: ["default"]
+    wait_for_ipv4_addresses: true
+    timeout: 600
+  tags: test-rockylinux8
