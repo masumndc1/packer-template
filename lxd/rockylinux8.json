@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "lxd",
+      "name": "lxd-rockylinux8",
+      "image": "rockylinux-base",
+      "output_image": "rockylinux8",
+      "publish_properties": {
+        "description": "Rockylinux 8 image"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": "../shell/centos.sh"
+    }
+  ]
+}
