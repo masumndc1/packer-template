@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "lxd",
+      "name": "lxd-opensuse15",
+      "image": "opensuse-base",
+      "output_image": "opensuse15",
+      "publish_properties": {
+        "description": "Opensuse 15 image"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": "../shell/centos.sh"
+    }
+  ]
+}
