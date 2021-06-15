@@ -1,0 +1,15 @@
+---
+- name: Create a started test-opensuse15 container
+  lxd_container:
+    name: test-opensuse15
+    state: started
+    source:
+      type: image
+      mode: pull
+      url: https://localhost:8443
+      protocol: lxd
+      alias: opensuse15
+    profiles: ["default"]
+    wait_for_ipv4_addresses: true
+    timeout: 600
+  tags: test-opensuese15
