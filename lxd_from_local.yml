@@ -7,4 +7,21 @@
   
   tasks:
   - name: Create a started test-centos7 container
-    include: play/containers.yml
+    include: play/test-centos7.yml
+    tags: test-centos7
+
+  - name: Create a started test-centos8 container
+    include: play/test-centos8.yml
+    tags: test-centos8
+
+  - name: Create a started test-ubuntu16 container
+    include: play/test-ubuntu16.yml
+    tags: test-ubuntu16
+
+  - name: Create a started test-ubuntu18 container
+    include: play/test-ubuntu18.yml
+    tags: test-ubuntu18
+
+  - name: Create a started test-ubuntu20 container
+    include: play/test-ubuntu20.yml
+    tags: test-ubuntu20
